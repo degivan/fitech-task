@@ -23,7 +23,6 @@ public class Test {
             threads.add(worker);
             worker.start();
         }
-        threads.get(0).interrupt();
         for (Thread worker : threads) {
             worker.join();
         }
